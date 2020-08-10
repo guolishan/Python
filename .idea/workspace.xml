@@ -17,8 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200810-初始化">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfotk.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfotk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,13 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="22b61b56-fe5e-459d-88a6-f2620efcfbe5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/guolishan/Python.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1eq7jz9lyouFjayOrXuQ8gRixlF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -305,7 +311,7 @@
       <workItem from="1597025469242" duration="6430000" />
       <workItem from="1597042767154" duration="1027000" />
       <workItem from="1597043807704" duration="1096000" />
-      <workItem from="1597044921232" duration="443000" />
+      <workItem from="1597044921232" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="20200810-初始化">
       <created>1597045214125</created>
@@ -314,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597045214125</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20200810-初始化">
+      <created>1597045376125</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597045376125</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,10 +391,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597044982761" />
-    <state x="555" y="261" key="Github.ShareDialog" timestamp="1597043495511">
+    <state x="555" y="261" key="Github.ShareDialog" timestamp="1597045531809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="555" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597043495511" />
+    <state x="555" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045531809" />
     <state width="1323" height="228" key="GridCell.Tab.0.bottom" timestamp="1597029905267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -423,6 +436,10 @@
     </state>
     <state x="213" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597044440354" />
     <state x="683" y="235" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596186721352" />
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2" timestamp="1597045471958">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597045471958" />
     <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597044599800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
