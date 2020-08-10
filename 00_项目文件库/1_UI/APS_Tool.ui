@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>查询产品序列信息：</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton { 
+    color: red ;
+    font-size:15px;
+}
+
+QLabel { 
+    color: blue ;
+    font-size:15px;
+}
+
+QTableWidget { 
+    color: blue ;
+    font-size:15px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>请输入查询条件(多个条件以逗号分开)：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="R1">
+         <property name="text">
+          <string>交流</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">B1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="R2">
+         <property name="text">
+          <string>直流</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">B1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_Search">
+         <property name="text">
+          <string>查询</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_Upload">
+         <property name="text">
+          <string>上传</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="table">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideRight</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>View_Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Form_Name</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="B1"/>
+ </buttongroups>
+</ui>

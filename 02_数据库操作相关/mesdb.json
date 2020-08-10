@@ -1,0 +1,7 @@
+{
+    "database": "n2db",
+    "user": "n2admin",
+    "password": "fefdee",
+    "host": "ip",
+    "port": "5432"
+}

@@ -1,0 +1,13 @@
+{
+  "db_list":[
+    {
+      "name": "k3c测试机",
+      "database": "AIS20191022105947",
+      "user": "sa",
+      "password": "Wb123456",
+      "host": "ip",
+      "port": "1433"
+    }
+  ],
+  "update_url": "ce shi"
+}
