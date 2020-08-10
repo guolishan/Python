@@ -32,6 +32,8 @@ def get_dpt_info(query_name, tk_result):
     text += "\n"
     tk_result.insert(1.0, text)
 
+    print('test')
+
 
 # 画界面
 def create_tk():

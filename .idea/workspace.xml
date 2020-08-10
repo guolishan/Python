@@ -17,63 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200810-初始化">
-      <changelist_data name="GLS" email="" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/APS_Tool.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/BOM_Compare.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Excel.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/JD_Info.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/MES_Table.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Salary_main.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Search_Menu.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/WM_Op.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/2_File/folderparams.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/2_File/shareparams.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/autogetpic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/autologin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/autowordtable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/itchatTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/killwinport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/meshandlejson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/openapp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/openapp2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_办公自动化相关/statsfiles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/bpmtkbind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfotk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/connectmysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/connectoracle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/connectpgsql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/connectsqlserver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/dbpool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/k3cdb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/k3chelper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/mescloudtag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/mesdb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/mesfuncmenu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/mestriggerlog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/operatesqllite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_数据库操作相关/table2word.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/GirlPhoto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/Logistics.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/xicidail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/正则测试.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/爬虫_快递.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/爬虫测试_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/爬虫测试_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_爬虫相关/爬虫测试_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/APS_Tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/BOM对比.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/MES 表数据导入.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/k3cdata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/仓库人效.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/拷贝指定的文件服务器数据.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/提取简历信息.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/查询MES菜单路径.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/样品订单履历表.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/清理测试设备文件.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfotk.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/bpmuserinfotk.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +36,14 @@
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="guolishan &lt;55841655+guolishan@users.noreply.github.com&gt;" />
+        <option value="code" />
         <option value="GLS" />
       </list>
     </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="22b61b56-fe5e-459d-88a6-f2620efcfbe5" />
@@ -357,7 +305,16 @@
       <workItem from="1597025469242" duration="6430000" />
       <workItem from="1597042767154" duration="1027000" />
       <workItem from="1597043807704" duration="1096000" />
+      <workItem from="1597044921232" duration="443000" />
     </task>
+    <task id="LOCAL-00001" summary="20200810-初始化">
+      <created>1597045214125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597045214125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +325,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -405,10 +374,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#部署/0.0.1366.728@0.0.1366.728" timestamp="1597044323899" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1597044486393">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1597044982761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597044486393" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597044982761" />
     <state x="555" y="261" key="Github.ShareDialog" timestamp="1597043495511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
