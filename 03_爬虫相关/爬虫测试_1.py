@@ -27,5 +27,5 @@ response = requests.get(url,verify = False ,headers = headers)
 # print(response.content.decode('UTF-8'))
 
 # 保存html信息到文件
-with open('xicidail.html','wb') as f:
+with open('../00_项目文件库/2_File/xicidail.html', 'wb') as f:
     f.write(response.content)

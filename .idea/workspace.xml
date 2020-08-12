@@ -16,11 +16,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200810-初始化">
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/2_File/password.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_日常小工具/破解WIFI密码.py" afterDir="false" />
+    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200811">
+      <change afterPath="$PROJECT_DIR$/03_爬虫相关/Search_BL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_日常小工具/生成密码本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_爬虫相关/Logistics.ui" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Logistics.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_爬虫相关/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_爬虫相关/xicidail.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/2_File/xicidail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_爬虫相关/爬虫测试_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_爬虫相关/爬虫测试_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_日常小工具/破解WIFI密码.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_日常小工具/破解WIFI密码.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,29 +95,7 @@
       <recent name="E:\Python_Project\Python\05_万帮需求" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.生成密码本">
-    <configuration name="仓库人效" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_万帮需求" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_万帮需求/仓库人效.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Search_BL">
     <configuration name="生成密码本" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +154,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/MES 表数据导入.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Search_BL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_爬虫相关" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_爬虫相关/Search_BL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,19 +251,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.仓库人效" />
       <item itemvalue="Python.GirlPhoto" />
       <item itemvalue="Python.MES 表数据导入" />
       <item itemvalue="Python.破解WIFI密码" />
       <item itemvalue="Python.生成密码本" />
+      <item itemvalue="Python.Search_BL" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Search_BL" />
         <item itemvalue="Python.生成密码本" />
         <item itemvalue="Python.破解WIFI密码" />
         <item itemvalue="Python.MES 表数据导入" />
         <item itemvalue="Python.GirlPhoto" />
-        <item itemvalue="Python.仓库人效" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +319,8 @@
       <workItem from="1597042767154" duration="1027000" />
       <workItem from="1597043807704" duration="1096000" />
       <workItem from="1597044921232" duration="2955000" />
-      <workItem from="1597125057982" duration="2771000" />
+      <workItem from="1597125057982" duration="3317000" />
+      <workItem from="1597200558642" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="20200810-初始化">
       <created>1597045214125</created>
@@ -339,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597045611013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20200811">
+      <created>1597127885135</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597127885135</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +390,8 @@
     <MESSAGE value="20200810" />
     <MESSAGE value="20200810测试" />
     <MESSAGE value="20200810-初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200810-初始化" />
+    <MESSAGE value="20200811" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200811" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -397,10 +409,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595238237050" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597127757343">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597128288733">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597127757343" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597128288733" />
     <state x="309" y="42" key="#检查" timestamp="1595053597986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -417,25 +429,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="555" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045921894" />
-    <state width="1323" height="183" key="GridCell.Tab.0.bottom" timestamp="1597127829277">
+    <state width="1323" height="183" key="GridCell.Tab.0.bottom" timestamp="1597128369401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597127829277" />
+    <state width="1323" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597128369401" />
     <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186579" />
-    <state width="1323" height="183" key="GridCell.Tab.0.center" timestamp="1597127829277">
+    <state width="1323" height="183" key="GridCell.Tab.0.center" timestamp="1597128369399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597127829277" />
+    <state width="1323" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597128369399" />
     <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186572" />
-    <state width="1323" height="183" key="GridCell.Tab.0.left" timestamp="1597127829277">
+    <state width="1323" height="183" key="GridCell.Tab.0.left" timestamp="1597128369399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597127829277" />
+    <state width="1323" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597128369399" />
     <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186570" />
-    <state width="1323" height="183" key="GridCell.Tab.0.right" timestamp="1597127829277">
+    <state width="1323" height="183" key="GridCell.Tab.0.right" timestamp="1597128369399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597127829277" />
+    <state width="1323" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597128369399" />
     <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186574" />
     <state width="1877" height="310" key="GridCell.Tab.1.bottom" timestamp="1595304531786">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -458,10 +470,10 @@
     </state>
     <state x="213" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597126525916" />
     <state x="683" y="235" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596186721352" />
-    <state x="288" y="96" key="Vcs.Push.Dialog.v2" timestamp="1597045946800">
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2" timestamp="1597127906394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="288" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597045946800" />
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597127906394" />
     <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597045791637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -506,6 +518,7 @@
     <SUITE FILE_PATH="coverage/Python$MES_.coverage" NAME="MES 表数据导入 Coverage Results" MODIFIED="1597028415831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$.coverage" NAME="生成密码本 Coverage Results" MODIFIED="1597127826702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_日常小工具" />
     <SUITE FILE_PATH="coverage/Python$GirlPhoto.coverage" NAME="GirlPhoto Coverage Results" MODIFIED="1596692427426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_爬虫相关" />
+    <SUITE FILE_PATH="coverage/Python$Search_BL.coverage" NAME="Search_BL Coverage Results" MODIFIED="1597128345277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_爬虫相关" />
     <SUITE FILE_PATH="coverage/Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1595504377681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$k3cdata.coverage" NAME="k3cdata Coverage Results" MODIFIED="1596186353359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$WIFI.coverage" NAME="破解WIFI密码 Coverage Results" MODIFIED="1597126740320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_日常小工具" />
