@@ -3,7 +3,7 @@ import json
 import pymssql
 
 if __name__ == '__main__':
-    with open('k3cdb.json','r',encoding='utf-8') as load_f:  # 传入标识符'r'表示读取文件
+    with open('../00_项目文件库/2_File/k3cdb.json', 'r', encoding='utf-8') as load_f:  # 传入标识符'r'表示读取文件
         load_dict = json.load(load_f)
     db_list = load_dict['db_list']
     update_url = load_dict['update_url']

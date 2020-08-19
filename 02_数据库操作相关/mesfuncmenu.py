@@ -7,7 +7,7 @@ import psycopg2
 # 读取db配置  psycopg2 postgreSQL包
 def read_json():
     db_info = {}
-    with open('mesdb.json','r') as load_f:  # 传入标识符'r'表示读取文件
+    with open('../00_项目文件库/2_File/mesdb.json', 'r') as load_f:  # 传入标识符'r'表示读取文件
         load_dict = json.load(load_f)
         db_info = load_dict
     conn = psycopg2.connect(database=db_info['database'], user=db_info['user'], password=db_info['password'],
