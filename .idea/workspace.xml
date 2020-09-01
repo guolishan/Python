@@ -16,18 +16,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200812">
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/创建K3C价目表.py" afterDir="false" />
+    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200819 增加K3C价目表">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Label.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00_项目文件库/2_File/label.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_日常小工具/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_办公自动化相关/autowordtable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_办公自动化相关/itchatTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_办公自动化相关/statsfiles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/k3cdb.json" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/2_File/k3cdb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/k3chelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/k3chelper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/mescloudtag.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/mescloudtag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/mesdb.json" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/2_File/mesdb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/mesfuncmenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/mesfuncmenu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_数据库操作相关/mestriggerlog.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_数据库操作相关/mestriggerlog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_项目文件库/2_File/password.txt" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/2_File/password.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_万帮需求/BOM对比.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_万帮需求/BOM对比.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_万帮需求/k3cdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_万帮需求/读取K3C发货通知单信息.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +74,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -100,7 +99,7 @@
       <recent name="E:\Python_Project\Python\05_万帮需求" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.创建K3C价目表">
+  <component name="RunManager" selected="Python.标签数据校验">
     <configuration name="生成密码本" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,6 +114,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_日常小工具/生成密码本.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="标签数据校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,28 +166,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MES 表数据导入" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/MES 表数据导入.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Search_BL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="破解WIFI密码" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="标签数据校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,12 +196,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_日常小工具" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_日常小工具/破解WIFI密码.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="标签数据校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,20 +276,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_日常小工具" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_日常小工具/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.MES 表数据导入" />
-      <item itemvalue="Python.破解WIFI密码" />
       <item itemvalue="Python.生成密码本" />
       <item itemvalue="Python.Search_BL" />
       <item itemvalue="Python.创建K3C价目表" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.标签数据校验" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.标签数据校验" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.生成密码本" />
         <item itemvalue="Python.创建K3C价目表" />
         <item itemvalue="Python.Search_BL" />
-        <item itemvalue="Python.生成密码本" />
-        <item itemvalue="Python.破解WIFI密码" />
-        <item itemvalue="Python.MES 表数据导入" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +371,18 @@
       <workItem from="1597200558642" duration="4310000" />
       <workItem from="1597295945472" duration="441000" />
       <workItem from="1597740181875" duration="685000" />
-      <workItem from="1597802885979" duration="10190000" />
+      <workItem from="1597802885979" duration="11136000" />
+      <workItem from="1597883279720" duration="3264000" />
+      <workItem from="1597901390145" duration="3236000" />
+      <workItem from="1597972854161" duration="3022000" />
+      <workItem from="1598332872664" duration="968000" />
+      <workItem from="1598357486042" duration="26000" />
+      <workItem from="1598419883606" duration="2630000" />
+      <workItem from="1598428418973" duration="449000" />
+      <workItem from="1598512399538" duration="3048000" />
+      <workItem from="1598850735029" duration="10150000" />
+      <workItem from="1598864347149" duration="2342000" />
+      <workItem from="1598922431295" duration="5599000" />
     </task>
     <task id="LOCAL-00001" summary="20200810-初始化">
       <created>1597045214125</created>
@@ -365,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597200690241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20200819 增加K3C价目表">
+      <created>1597816841536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597816841537</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +468,8 @@
     <MESSAGE value="20200810-初始化" />
     <MESSAGE value="20200811" />
     <MESSAGE value="20200812" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200812" />
+    <MESSAGE value="20200819 增加K3C价目表" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200819 增加K3C价目表" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -421,9 +483,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="156" key="#TODO/0.0.1366.728@0.0.1366.728" timestamp="1597044334641" />
-    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595238237050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="295" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598861252656">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="295" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598861252656" />
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595238237050" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597128288733">
       <screen x="0" y="0" width="1366" height="728" />
@@ -445,66 +508,95 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="555" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045921894" />
-    <state width="1323" height="263" key="GridCell.Tab.0.bottom" timestamp="1597813879209">
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom" timestamp="1598925092940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597813879209" />
-    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186579" />
-    <state width="1323" height="263" key="GridCell.Tab.0.center" timestamp="1597813879209">
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282237" />
+    <state width="1323" height="109" key="GridCell.Tab.0.center" timestamp="1598925092940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597813879209" />
-    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186572" />
-    <state width="1323" height="263" key="GridCell.Tab.0.left" timestamp="1597813879209">
+    <state width="1323" height="109" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
+    <state width="1323" height="109" key="GridCell.Tab.0.left" timestamp="1598925092940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597813879209" />
-    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186570" />
-    <state width="1323" height="263" key="GridCell.Tab.0.right" timestamp="1597813879209">
+    <state width="1323" height="109" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
+    <state width="1323" height="109" key="GridCell.Tab.0.right" timestamp="1598925092940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597813879209" />
-    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596450186574" />
-    <state width="1877" height="310" key="GridCell.Tab.1.bottom" timestamp="1595304531786">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="109" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
+    <state width="1323" height="262" key="GridCell.Tab.1.bottom" timestamp="1598866602987">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598866602987" />
     <state width="1877" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595304531786" />
-    <state width="1877" height="310" key="GridCell.Tab.1.center" timestamp="1595304531786">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="262" key="GridCell.Tab.1.center" timestamp="1598866602987">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598866602987" />
     <state width="1877" height="310" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595304531786" />
-    <state width="1877" height="310" key="GridCell.Tab.1.left" timestamp="1595304531786">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="262" key="GridCell.Tab.1.left" timestamp="1598866602986">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598866602986" />
     <state width="1877" height="310" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595304531786" />
-    <state width="1877" height="310" key="GridCell.Tab.1.right" timestamp="1595304531786">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="262" key="GridCell.Tab.1.right" timestamp="1598866602987">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="262" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598866602987" />
     <state width="1877" height="310" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595304531786" />
+    <state width="152" height="477" key="HiddenNamespacesPopup" timestamp="1598857160556">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="152" height="477" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1598857160556" />
     <state x="683" y="235" key="SettingsEditor" timestamp="1597200757237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="213" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597126525916" />
     <state x="683" y="235" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597200757237" />
-    <state x="405" y="137" key="Vcs.Push.Dialog.v2" timestamp="1597200768114">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2" timestamp="1597816885014">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="288" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597127906394" />
+    <state x="288" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597816885014" />
     <state x="405" y="137" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597200768114" />
-    <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597045791637">
+    <state x="553" y="250" width="336" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1598861301924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597045791637" />
-    <state x="384" y="96" width="597" height="536" key="find.popup" timestamp="1597813675366">
+    <state x="553" y="250" width="336" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1598861301924" />
+    <state x="602" y="309" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1598857248729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="96" width="597" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597813675366" />
+    <state x="602" y="309" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1366.728@0.0.1366.728" timestamp="1598857248729" />
+    <state x="525" y="211" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1598857195088">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="525" y="211" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1366.728@0.0.1366.728" timestamp="1598857195088" />
+    <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597883419831">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="509" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597883419831" />
+    <state x="737" y="168" width="597" height="536" key="find.popup" timestamp="1598924671626">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="737" y="168" width="597" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598924671626" />
+    <state x="540" y="137" width="840" height="766" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598851225318" />
     <state x="420" y="150" key="git4idea.merge.GitPullDialog" timestamp="1597045887025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="420" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045887025" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/02_数据库操作相关/operatesqllite.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="series" />
@@ -527,15 +619,17 @@
         <watch expression="end_time2" language="Python" />
         <watch expression="end_time" language="Python" />
         <watch expression="start_time" language="Python" />
+        <watch expression="g_label_id[0:7]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python$_2.coverage" NAME="仓库_2 Coverage Results" MODIFIED="1596187126831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$MES_.coverage" NAME="MES 表数据导入 Coverage Results" MODIFIED="1597028415831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04_万帮需求" />
-    <SUITE FILE_PATH="coverage/Python$.coverage" NAME="生成密码本 Coverage Results" MODIFIED="1597127826702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_日常小工具" />
+    <SUITE FILE_PATH="coverage/Python$.coverage" NAME="标签数据校验 Coverage Results" MODIFIED="1598925092932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$GirlPhoto.coverage" NAME="GirlPhoto Coverage Results" MODIFIED="1596692427426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_爬虫相关" />
     <SUITE FILE_PATH="coverage/Python$Search_BL.coverage" NAME="Search_BL Coverage Results" MODIFIED="1597128345277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_爬虫相关" />
+    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1598923111100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_日常小工具" />
     <SUITE FILE_PATH="coverage/Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1595504377681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$k3cdata.coverage" NAME="k3cdata Coverage Results" MODIFIED="1596186353359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_万帮需求" />
     <SUITE FILE_PATH="coverage/Python$WIFI.coverage" NAME="破解WIFI密码 Coverage Results" MODIFIED="1597126740320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_日常小工具" />
