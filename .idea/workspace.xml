@@ -16,17 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200819 增加K3C价目表">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Label.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/2_File/label.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_日常小工具/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_项目文件库/2_File/password.txt" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/2_File/password.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_万帮需求/BOM对比.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_万帮需求/BOM对比.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_万帮需求/k3cdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_万帮需求/读取K3C发货通知单信息.py" afterDir="false" />
-    </list>
+    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200901 添加标签功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +89,7 @@
       <recent name="E:\Python_Project\Python\05_万帮需求" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.标签数据校验">
+  <component name="RunManager" selected="Python.生成密码本">
     <configuration name="生成密码本" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,28 +104,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_日常小工具/生成密码本.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="标签数据校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,6 +148,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_爬虫相关/Search_BL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="标签数据校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_万帮需求" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_万帮需求/标签数据校验.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -303,11 +293,9 @@
       <item itemvalue="Python.Search_BL" />
       <item itemvalue="Python.创建K3C价目表" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.标签数据校验" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.标签数据校验" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.生成密码本" />
         <item itemvalue="Python.创建K3C价目表" />
@@ -382,7 +370,7 @@
       <workItem from="1598512399538" duration="3048000" />
       <workItem from="1598850735029" duration="10150000" />
       <workItem from="1598864347149" duration="2342000" />
-      <workItem from="1598922431295" duration="5599000" />
+      <workItem from="1598922431295" duration="5687000" />
     </task>
     <task id="LOCAL-00001" summary="20200810-初始化">
       <created>1597045214125</created>
@@ -426,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597816841537</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="20200901 添加标签功能">
+      <created>1598928249797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598928249797</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +464,8 @@
     <MESSAGE value="20200811" />
     <MESSAGE value="20200812" />
     <MESSAGE value="20200819 增加K3C价目表" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200819 增加K3C价目表" />
+    <MESSAGE value="20200901 添加标签功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200901 添加标签功能" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -508,25 +504,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="555" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045921894" />
-    <state width="1323" height="109" key="GridCell.Tab.0.bottom" timestamp="1598925092940">
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom" timestamp="1598928273210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="109" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598928273210" />
     <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282237" />
-    <state width="1323" height="109" key="GridCell.Tab.0.center" timestamp="1598925092940">
+    <state width="1323" height="109" key="GridCell.Tab.0.center" timestamp="1598928273210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="109" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1323" height="109" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598928273210" />
     <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
-    <state width="1323" height="109" key="GridCell.Tab.0.left" timestamp="1598925092940">
+    <state width="1323" height="109" key="GridCell.Tab.0.left" timestamp="1598928273210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="109" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1323" height="109" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598928273210" />
     <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
-    <state width="1323" height="109" key="GridCell.Tab.0.right" timestamp="1598925092940">
+    <state width="1323" height="109" key="GridCell.Tab.0.right" timestamp="1598928273210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="109" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598925092940" />
+    <state width="1323" height="109" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598928273210" />
     <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598851282236" />
     <state width="1323" height="262" key="GridCell.Tab.1.bottom" timestamp="1598866602987">
       <screen x="0" y="0" width="1366" height="728" />
