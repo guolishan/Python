@@ -63,10 +63,17 @@ import re
 # print(s)
 # print(s2)
 
-line = '本科'
+# line = '本科'
+#
+# age = re.search(r'大专|本科', line)
+# print(age)
+# if age:
+#     age = age.group(0)
+#     print(age)
 
-age = re.search(r'大专|本科', line)
-print(age)
-if age:
-    age = age.group(0)
-    print(age)
+str = '<div class="itime">2020-09-01<br/>14:59:36</div>'
+pattern = '<div class="itime">(.*)(<br/>)(.*)(</div>)'
+
+date = re.match(pattern, str)
+
+print(date.group(3))

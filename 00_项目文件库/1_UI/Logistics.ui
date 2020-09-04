@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>724</width>
+    <width>779</width>
     <height>502</height>
    </rect>
   </property>
@@ -21,17 +21,26 @@
        <item>
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>请输入快递单号</string>
+          <string>请输入快递单号：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="font">
+          <font>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QPushButton" name="Button_Search">
          <property name="text">
-          <string>查询</string>
+          <string>从剪贴板读取</string>
          </property>
         </widget>
        </item>
@@ -58,6 +67,16 @@
        <attribute name="horizontalHeaderCascadingSectionResizes">
         <bool>true</bool>
        </attribute>
+       <column>
+        <property name="text">
+         <string>快递单号</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>快递公司</string>
+        </property>
+       </column>
        <column>
         <property name="text">
          <string>时间</string>
