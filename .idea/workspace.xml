@@ -16,20 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200901 添加标签功能">
-      <change afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/批量修改文件内容.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/批量替换多个word文档内容/file_version_info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/批量替换多个word文档内容/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_万帮需求/批量替换多个word文档内容/win.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_日常小工具/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_日常小工具/单号.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_日常小工具/批量查询快递单号.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_项目文件库/1_UI/Logistics.ui" beforeDir="false" afterPath="$PROJECT_DIR$/00_项目文件库/1_UI/Logistics.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_爬虫相关/正则测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_爬虫相关/正则测试.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_日常小工具/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_日常小工具/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="85a6b944-fa81-4dd4-b17c-f1299a6fb76f" name="默认的" comment="20200904 批量查快递" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -416,6 +403,7 @@
       <workItem from="1599122477236" duration="3737000" />
       <workItem from="1599182342164" duration="12406000" />
       <workItem from="1599204855120" duration="2979000" />
+      <workItem from="1599209436508" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="20200810-初始化">
       <created>1597045214125</created>
@@ -473,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598929608306</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="20200904 批量查快递">
+      <created>1599209624039</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599209624039</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +512,8 @@
     <MESSAGE value="20200812" />
     <MESSAGE value="20200819 增加K3C价目表" />
     <MESSAGE value="20200901 添加标签功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="20200904 批量查快递" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200904 批量查快递" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
