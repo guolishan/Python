@@ -7,11 +7,42 @@
     <x>0</x>
     <y>0</y>
     <width>779</width>
-    <height>502</height>
+    <height>503</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>查询快递信息</string>
+   <string>批量查询快递信息</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton { 
+    color: green ;
+    font-size:15px;
+}
+
+QLabel { 
+    color: blue ;
+    font-size:15px;
+}
+QCheckBox { 
+    color: blue ;
+    font-size:15px;
+}
+
+QTableWidget { 
+    color: blue ;
+    font-size:15px;
+}
+
+QTabWidget { 
+    color: blue ;
+    font-size:15px;
+}
+
+QWidget#tab1 { 
+    color: red ;
+    font-size:15px;
+}
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -29,6 +60,7 @@
         <widget class="QLineEdit" name="lineEdit">
          <property name="font">
           <font>
+           <pointsize>11</pointsize>
            <italic>false</italic>
           </font>
          </property>
@@ -39,6 +71,13 @@
        </item>
        <item>
         <widget class="QPushButton" name="Button_Search">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
           <string>从剪贴板读取</string>
          </property>
@@ -46,6 +85,13 @@
        </item>
        <item>
         <widget class="QPushButton" name="Button_Down">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
           <string>导出</string>
          </property>
@@ -55,6 +101,17 @@
      </item>
      <item>
       <widget class="QTableWidget" name="table">
+       <property name="styleSheet">
+        <string notr="true">QWidget#table { 
+    color: red ;
+    font-size:15px;
+}
+
+QPushButton { 
+    color: green ;
+    font-size:15px;
+}</string>
+       </property>
        <property name="editTriggers">
         <set>QAbstractItemView::NoEditTriggers</set>
        </property>
@@ -79,7 +136,17 @@
        </column>
        <column>
         <property name="text">
+         <string>单据状态</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
          <string>时间</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>时差(小时)</string>
         </property>
        </column>
        <column>

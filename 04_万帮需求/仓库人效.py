@@ -25,8 +25,8 @@ global df,exclude_list,df_new,total_qty,exe_flag,df_user,current_ser,total_qty,e
 class Stats(QWidget):
     def __init__(self, parent=None):
         super(Stats, self).__init__(parent)
-        self.ui = QUiLoader().load('../00_项目文件库/1_UI/WM_Op.ui')
-        # self.ui = QUiLoader().load('WM_Op.ui')
+        # self.ui = QUiLoader().load('../00_项目文件库/1_UI/WM_Op.ui')
+        self.ui = QUiLoader().load('WM_Op.ui')
         # 初始化窗体相关控件
         self.init_ui()
         # 按钮事件
@@ -449,8 +449,8 @@ if __name__ == '__main__':
     try:
         app = QApplication([])
         # 加载 icon
-        app.setWindowIcon(QIcon('../00_项目文件库/1_UI/logo.png'))
-        # app.setWindowIcon(QIcon('logo.png'))
+        # app.setWindowIcon(QIcon('../00_项目文件库/1_UI/logo.png'))
+        app.setWindowIcon(QIcon('logo.png'))
         stats = Stats()
         stats.ui.show()
         app.exec_()
