@@ -34,7 +34,7 @@ def conn_db_plm():
     list_type = []
 
     # 查询创建者创建的部件数量
-    sql = "SELECT COUNT(distinct a.IDA2A2),c.FULLNAME from wtpartmaster a,wtpart,wtuser c where a.ida2A2 = wtpart.ida3masterreference and wtpart.ida3d2iterationinfo = c.IDA2A2 group by c.FULLNAME"
+    sql = "SELECT COUNT(distinct a.IDA2A2) , c.FULLNAME from wtpartmaster a,wtpart,wtuser c where a.ida2A2 = wtpart.ida3masterreference and wtpart.ida3d2iterationinfo = c.IDA2A2 group by c.FULLNAME"
     cur.execute(sql)
     data = cur.fetchall()
     df = pd.DataFrame([list(i) for i in data])
@@ -47,7 +47,7 @@ def conn_db_plm():
 
 
     #根据属性部门查询成品数量
-    sql_1 = "SELECT count(distinct wpm.IDA2A2),sv.value FROM WTPARTMASTER wpm LEFT JOIN WTPART wp ON wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wp.ida3b2folderinginfo = '148475' LEFT JOIN stringvalue sv ON wp.ida2a2 = sv.ida3a4 and sv.IDA3A6 = '70000' group by sv.value"
+    sql_1 = "SELECT count(distinct wpm.IDA2A2),sv.value FROM WTPARTMASTER wpm,WTPART wp,stringvalue sv where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wp.ida3b2folderinginfo = '148475' and wp.ida2a2 = sv.ida3a4 and sv.IDA3A6 = '70000' group by sv.value"
     cur.execute(sql_1)
     data = cur.fetchall()
     df_1 = pd.DataFrame([list(i) for i in data])
@@ -59,7 +59,7 @@ def conn_db_plm():
         list_name.append('')
 
     #查询创建者创建的solidworks模型数量
-    sql_2 = "SELECT count(distinct wpm.IDA2A2), wu.FULLNAME FROM epmdocumentmaster wpm LEFT JOIN epmdocument wp ON wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.AUTHORINGAPPLICATION = 'SOLIDWORKS' LEFT JOIN WTUSER wu ON wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
+    sql_2 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM epmdocumentmaster wpm,epmdocument wp,WTUSER wu where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.AUTHORINGAPPLICATION = 'SOLIDWORKS' and wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
     cur.execute(sql_2)
     data = cur.fetchall()
     df_2 = pd.DataFrame([list(i) for i in data])
@@ -71,7 +71,7 @@ def conn_db_plm():
         list_dep.append('')
 
     #查询创建者创建的creo模型数量
-    sql_3 = "SELECT count(distinct wpm.IDA2A2), wu.FULLNAME FROM epmdocumentmaster wpm LEFT JOIN epmdocument wp ON wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.AUTHORINGAPPLICATION = 'PROE' LEFT JOIN WTUSER wu ON wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
+    sql_3 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM epmdocumentmaster wpm,epmdocument wp,WTUSER wu where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.AUTHORINGAPPLICATION = 'PROE' and wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
     cur.execute(sql_3)
     data = cur.fetchall()
     df_3 = pd.DataFrame([list(i) for i in data])
@@ -95,7 +95,7 @@ def conn_db_plm():
         list_dep.append('')
 
     # 查询创建者创建的更改请求数量 - ECR
-    sql_5 = " SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM wtchangerequest2 wpm,WTUSER wu where wpm.ida3d2iterationinfo = wu.IDA2A2 group by wu.FULLNAME"
+    sql_5 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM wtchangerequest2 wpm,WTUSER wu where wpm.ida3d2iterationinfo = wu.IDA2A2 group by wu.FULLNAME"
     cur.execute(sql_5)
     data = cur.fetchall()
     df_5 = pd.DataFrame([list(i) for i in data])
@@ -130,6 +130,67 @@ def conn_db_plm():
         list_type.append('问题报告')
         list_dep.append('')
 
+    #查询创建者创建的产品数量
+    sql_8 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM pdmlinkproduct wpm,WTUSER wu where wpm.ida3b2containerinfo = wu.IDA2A2 group by wu.FULLNAME"
+    cur.execute(sql_8)
+    data = cur.fetchall()
+    df_8 = pd.DataFrame([list(i) for i in data])
+
+    for index, row in df_8.iterrows():
+        list_name.append(row[1])
+        list_count.append(row[0])
+        list_type.append('产品数量')
+        list_dep.append('')
+
+    #查询创建者创建的图纸数量
+    sql_9 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM epmdocumentmaster wpm,epmdocument wp,WTUSER wu where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.cadname like '%drw' and wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
+    cur.execute(sql_9)
+    data = cur.fetchall()
+    df_9 = pd.DataFrame([list(i) for i in data])
+
+    for index, row in df_9.iterrows():
+        list_name.append(row[1])
+        list_count.append(row[0])
+        list_type.append('图纸数量')
+        list_dep.append('')
+
+    #查询创建者创建的项目数量
+    sql_10 = "SELECT count(distinct wpm.IDA2A2), wu.FULLNAME FROM project2 wpm,WTUSER wu where wpm.ida3b2containerinfo = wu.IDA2A2 group by wu.FULLNAME"
+    cur.execute(sql_10)
+    data = cur.fetchall()
+    df_10= pd.DataFrame([list(i) for i in data])
+
+    for index, row in df_10.iterrows():
+        list_name.append(row[1])
+        list_count.append(row[0])
+        list_type.append('项目数量')
+        list_dep.append('')
+
+    #查询创建者创建的IPD文档数量
+    sql_11 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM wtdocumentmaster wpm,wtdocument wp,WTUSER wu  where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wpm.wtdocumentnumber like 'IPD%' and wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
+    cur.execute(sql_11)
+    data = cur.fetchall()
+    df_11= pd.DataFrame([list(i) for i in data])
+
+    for index, row in df_11.iterrows():
+        list_name.append(row[1])
+        list_count.append(row[0])
+        list_type.append('IPD文档数量')
+        list_dep.append('')
+
+    #查询创建者创建的BOM数量
+    sql_12 = "SELECT count(distinct wpm.IDA2A2),wu.FULLNAME FROM wtpartmaster wpm,wtpart wp,wtpartusagelink wul,WTUSER wu where wpm.IDA2A2 = wp.IDA3MASTERREFERENCE and wp.IDA2A2 = wul.IDA3A5 and wu.IDA2A2 = wp.IDA3D2ITERATIONINFO group by wu.FULLNAME"
+    cur.execute(sql_12)
+    data = cur.fetchall()
+    df_12= pd.DataFrame([list(i) for i in data])
+
+    for index, row in df_12.iterrows():
+        list_name.append(row[1])
+        list_count.append(row[0])
+        list_type.append('BOM数量')
+        list_dep.append('')
+
+
     conn.close()
 
 
@@ -137,7 +198,6 @@ def conn_db_plm():
     df_new['name'] = list_name
     df_new['dep'] = list_dep
     df_new['count'] = list_count
-
 
     return df_new
 
