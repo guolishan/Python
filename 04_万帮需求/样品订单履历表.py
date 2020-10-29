@@ -1,6 +1,6 @@
 import datetime
 import os
-
+import openpyxl
 import pandas as pd
 import psycopg2
 
@@ -31,11 +31,11 @@ def conn_db():
                             host="172.16.1.18",port="5433")
     cur = conn.cursor()
 
-    sql = "SELECT b.wt_project_id,c.project_code,c.product_count,c.project_name,a.wti_item_code,c.product_name,c.product_standard,a.wti_operate_code,a.wti_operate_type,a.wti_operate_time,c.pm_memo, a.wti_item_sn " \
+    sql = "SELECT b.wt_project_id,c.project_code,c.product_count,c.project_name,a.wti_item_code,c.product_name,c.product_standard,a.wti_operate_code,a.wti_operate_type,a.wti_operate_time,c.pm_memo, a.wti_item_sn, a.wti_doc_type " \
           "FROM T_WIP_TRACKING b LEFT JOIN T_WMS_TASK_LOG a on a.wti_item_sn = b.wt_sn " \
           "INNER JOIN T_PM_PROJECT_BASE c on b.wt_project_id = c.project_id " \
           "WHERE wti_item_sn in (SELECT wt_sn from T_WIP_TRACKING  WHERE wt_mo_number like 'YP%')" \
-          "AND a.wti_wh_code = '0108'"
+          "AND a.wti_wh_code = '0108' and a.wti_doc_type is not null"
 
     cur.execute(sql)
 
@@ -70,11 +70,13 @@ def process_data():
 
         for index, row in df.iterrows():
             if row1['wti_item_sn'] == row['wti_item_sn']:
-                if row1['wti_operate_code'] == 'WMS027':
+                if row['wti_doc_type'] == 'DJ06':    # 入库
                     s2 = pd.Series([row['wti_operate_time']],index = ['gr_time'])
-                else:
+                elif row['wti_doc_type'] == 'DJ14':   # 出库:
                     s2 = pd.Series([row['wti_operate_time']],index = ['gi_time'])
+
                 s1 = s1.append(s2)
+
 
         df_new = df_new.append(s1, ignore_index=True)
 
