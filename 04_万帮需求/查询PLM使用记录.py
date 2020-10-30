@@ -240,12 +240,12 @@ def process_data():
     for index, row in df1.iterrows():
         if row[0] == '成品':
             if pd.isna(row['dep']):
-                row['dep'] = '未知'
+                row['dep'] = 'Administator'
 
             s1 = pd.Series([row['type'],row['dep'],row['count']],index=['type', 'dep', 'count'])
         else:
             if pd.isna(row['dep_2']):
-                row['dep_2'] = '未知'
+                row['dep_2'] = 'Administator'
             s1 = pd.Series([row['type'], row['dep_2'], row['count']], index=['type', 'dep', 'count'])
 
         df2 = df2.append(s1, ignore_index=True)
