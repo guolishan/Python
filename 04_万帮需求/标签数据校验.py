@@ -14,8 +14,8 @@ class Stats(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         # 从文件中加载UI定义
-        # self.ui = QUiLoader().load('../00_项目文件库/1_UI/Label.ui')
-        self.ui = QUiLoader().load('Label.ui')
+        self.ui = QUiLoader().load('../00_项目文件库/1_UI/Label.ui')
+        # self.ui = QUiLoader().load('Label.ui')
 
         self.create_table()
         # 初始化控件
@@ -107,8 +107,8 @@ if __name__ == '__main__':
     try:
         app = QApplication([])
         # 加载 icon
-        # app.setWindowIcon(QIcon('../00_项目文件库/1_UI/logo.png'))
-        app.setWindowIcon(QIcon('logo.png'))
+        app.setWindowIcon(QIcon('../00_项目文件库/1_UI/logo.png'))
+        # app.setWindowIcon(QIcon('logo.png'))
         stats = Stats()
         stats.ui.show()
         app.exec_()

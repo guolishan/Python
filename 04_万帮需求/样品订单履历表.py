@@ -72,13 +72,13 @@ def process_data():
             if row1['wti_item_sn'] == row['wti_item_sn']:
                 if row['wti_doc_type'] == 'DJ06':    # 入库
                     s2 = pd.Series([row['wti_operate_time']],index = ['gr_time'])
-                elif row['wti_doc_type'] == 'DJ14':   # 出库:
+                elif row['wti_doc_type'] == 'DJ14' or row['wti_doc_type'] == 'DJ16':   # 出库或者调拨
                     s2 = pd.Series([row['wti_operate_time']],index = ['gi_time'])
 
                 s1 = s1.append(s2)
 
 
-        df_new = df_new.append(s1, ignore_index=True)
+        df_new = df_new.append(s1,ignore_index=True)
 
     # 标题重命名
     df_new.rename(columns={"wt_project_id": "订单号", "project_code": "项目编号", "product_count": "订单数量", "project_name": "项目名称", "wti_item_code": "料号","product_name": "料号名称",
@@ -104,7 +104,6 @@ def output_data():
 
     now_str= datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"----{now_str}----程序结束执行...")
-
 
 if __name__ == '__main__':
     get_data()
