@@ -64,6 +64,19 @@ def process_data():
         keep = 'first'  # 保存第一条重复数据
     )
 
+    # 去除重复行数据 keep:'first':保留重复行的第一行，'last':保留重复行的最后一行,False：删除所有重复行
+    df = df.drop_duplicates(
+        subset=['wt_project_id','wti_item_sn','wti_doc_type'],  # 去重列，按这些列进行去重
+        keep='last'  # 保存第一条重复数据
+    )
+
+    # print('---' * 50)
+    # print(df1)
+    #
+    # print('---' * 50)
+    # print(df)
+
+
     # 数据遍历
     for index1, row1 in df1.iterrows():
         s1 = pd.Series([row1['wt_project_id'],row1['project_code'],row1['product_count'],row1['project_name'],row1['wti_item_code'],row1['product_name'],row1['product_standard'],row1['pm_memo'],row1['wti_item_sn']],index = ['wt_project_id','project_code','product_count','project_name','wti_item_code','product_name','product_standard','pm_memo','wti_item_sn'] )
@@ -72,11 +85,15 @@ def process_data():
             if row1['wti_item_sn'] == row['wti_item_sn']:
                 if row['wti_doc_type'] == 'DJ06':    # 入库
                     s2 = pd.Series([row['wti_operate_time']],index = ['gr_time'])
-                elif row['wti_doc_type'] == 'DJ14' or row['wti_doc_type'] == 'DJ16':   # 出库或者调拨
+                elif row['wti_doc_type'] == 'DJ14' or row['wti_doc_type'] == 'DJ16' or row['wti_doc_type'] == 'DJ11' or row['wti_doc_type'] == 'DJ10':    # 出库或者调拨或者销售发货
                     s2 = pd.Series([row['wti_operate_time']],index = ['gi_time'])
 
                 s1 = s1.append(s2)
 
+        # print('---' * 50)
+        # print(s1)
+        # print('---' * 50)
+        # print(df_new)
 
         df_new = df_new.append(s1,ignore_index=True)
 
