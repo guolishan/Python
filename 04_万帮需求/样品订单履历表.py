@@ -70,25 +70,33 @@ def process_data():
         keep='last'  # 保存第一条重复数据
     )
 
-    # print('---' * 50)
-    # print(df1)
+    print('---' * 50)
+    print(df1)
     #
     # print('---' * 50)
     # print(df)
 
+    flg_gi = ''
+    flg_gr = ''
 
     # 数据遍历
     for index1, row1 in df1.iterrows():
         s1 = pd.Series([row1['wt_project_id'],row1['project_code'],row1['product_count'],row1['project_name'],row1['wti_item_code'],row1['product_name'],row1['product_standard'],row1['pm_memo'],row1['wti_item_sn']],index = ['wt_project_id','project_code','product_count','project_name','wti_item_code','product_name','product_standard','pm_memo','wti_item_sn'] )
-
+        flg_gi = ''
+        flg_gr = ''
+        if row1['wt_project_id'] == 'YP-BPM-2012017':
+            print('aa')
         for index, row in df.iterrows():
             if row1['wti_item_sn'] == row['wti_item_sn']:
-                if row['wti_doc_type'] == 'DJ06':    # 入库
+                if row['wti_doc_type'] == 'DJ06' and flg_gr == '':    # 入库
+                    flg_gr = 'X'
                     s2 = pd.Series([row['wti_operate_time']],index = ['gr_time'])
-                elif row['wti_doc_type'] == 'DJ14' or row['wti_doc_type'] == 'DJ16' or row['wti_doc_type'] == 'DJ11' or row['wti_doc_type'] == 'DJ10':    # 出库或者调拨或者销售发货
+                    s1 = s1.append(s2)
+                elif( row['wti_doc_type'] == 'DJ14' or row['wti_doc_type'] == 'DJ16' or row['wti_doc_type'] == 'DJ11' or row['wti_doc_type'] == 'DJ10' ) and flg_gi == '':    # 出库或者调拨或者销售发货
+                    flg_gi = 'X'
                     s2 = pd.Series([row['wti_operate_time']],index = ['gi_time'])
+                    s1 = s1.append(s2)
 
-                s1 = s1.append(s2)
 
         # print('---' * 50)
         # print(s1)
