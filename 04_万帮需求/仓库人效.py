@@ -95,16 +95,16 @@ class Stats(QWidget):
 
 
         # 分别指定升序和降序
-        df.sort_values(by =["wms_type","wrd_doc_num","re_time","wrd_item_code","hand_time"],ascending=[True, True,True,True,True],inplace=True)
+        df.sort_values(by =["wms_type","re_emp","wrd_doc_num","re_time","wrd_item_code","hand_time"],ascending=[True, True,True,True,True,True],inplace=True)
         df = df.reset_index(drop=True)  # drop=True表示删除原索引，不然会在数据表格中新生成一列'index'数据
 
-        #显示所有列
+        # #显示所有列
         # pd.set_option('display.max_columns', 3000)
         #
-        # #显示所有行
+        # # #显示所有行
         # pd.set_option('display.max_rows',3000)
 
-        pd.set_option('display.max_rows', 500)
+        pd.set_option('display.max_rows', 2000)
         pd.set_option('display.max_columns', 500)
         pd.set_option('display.width', 1000)
 
@@ -153,6 +153,9 @@ class Stats(QWidget):
                 start_time = current_ser[4]
                 end_time = data_next[4]
 
+                if current_ser[5] !=  data_next[5]: # 如果是同个业务，同一单，换物料且换人员了
+                    end_time = current_ser[6]
+
                 # 如果是这俩颗物料跨天操作，取当前物料的处理时间
                 if date != date_next:
                     end_time = series[4]
@@ -199,7 +202,7 @@ class Stats(QWidget):
 
             i = series.name   # 获取每行数据所在的行
 
-            if i == 84 :
+            if i == 108 :
                 print()
 
             if i == 0:
@@ -219,9 +222,9 @@ class Stats(QWidget):
                 date_next = data_next[4].strftime('%Y%m%d')
                 # date_next2 = data_next2[4].strftime('%Y%m%d')
 
-                # 当前行和第二行wms_type、wrd_doc_num、wrd_item_code、qty相同
+                # 当前行和第二行wms_type、wrd_doc_num、wrd_item_code、qty、re_emp相同
                 if data_next[0] == current_ser[0] and data_next[1] == current_ser[1] \
-                        and data_next[2] == current_ser[2] and date == date_next:
+                        and data_next[2] == current_ser[2] and date == date_next and data_next[5] == current_ser[5]:
 
                     time_gap1 = cal_time(series[4],data_next[4])
 
@@ -335,6 +338,7 @@ class Stats(QWidget):
         # df = df.fillna(method='ffill')
         # df = df.stack().reset_index()
         #
+        # print(df)
 
         # 匹配姓名
         df1 = pd.merge(df,df_user.loc[:,['re_emp','name']],how='left',on = 're_emp')
@@ -344,7 +348,6 @@ class Stats(QWidget):
         # move-corresponding to
         order = ["wms_type","re_emp","name","wrd_doc_num","wrd_item_code","qty_sum","开始时间","结束时间","用时_sum","单位"]
         df = df[order]
-
 
         #标题重命名
         df.rename(columns={"wms_type":"业务类型","re_emp":"工号","name":"姓名","wrd_doc_num":"单号","wrd_item_code":"料号","用时_sum":"用时","qty_sum":"数量"}, inplace = True)
@@ -411,7 +414,7 @@ class Stats(QWidget):
 
 
         # sql1 = "SELECT '入库' as wms_type, wrd_doc_num , wrd_item_code,wrd_current_num as qty,wrd_receive_time as re_time,wrd_receive_emp as re_emp,WRD_HANDOVER_TIME as hand_time,WRD_HANDOVER_EMP as hand_emp FROM T_WMS_RECEIVE_DETAIL WHERE wrd_doc_num = 'CGSL069549' or wrd_doc_num = 'CGSL069551'or wrd_doc_num = 'CGSL069551';"
-        sql1 = "SELECT '出库' as wms_type, wod_doc_num as wrd_doc_num,wod_item_code as wrd_item_code, wod_outstock_num as qty,WOD_OUTSTOCK_TIME as re_time,WOD_OUTSTOCK_EMP as re_emp,WOD_HANDOVER_TIME as hand_time,WOD_HANDOVER_EMP as hand_emp FROM T_WMS_OUTSTOCK_DETAIL WHERE wod_doc_num = 'PPBOM00014954';"
+        sql1 = "SELECT '出库' as wms_type, wod_doc_num as wrd_doc_num,wod_item_code as wrd_item_code, wod_outstock_num as qty,WOD_OUTSTOCK_TIME as re_time,WOD_OUTSTOCK_EMP as re_emp,WOD_HANDOVER_TIME as hand_time,WOD_HANDOVER_EMP as hand_emp FROM T_WMS_OUTSTOCK_DETAIL WHERE wod_doc_num = 'PPBOM00053486';"
 
         cur.execute(sql)
 
